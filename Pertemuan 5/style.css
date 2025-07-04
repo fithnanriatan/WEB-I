@@ -1,0 +1,132 @@
+html{
+    font-family: poppins;
+}
+
+nav{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7c4;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.nav-link li a:hover{
+    color: #007BFF;
+}
+
+.btn-primary{
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover{
+    background-color: red;
+}
+
+.btn-secondary{
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-outline-primary{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-outline-primary:hover{
+    background-color: orangered;
+    color: white;
+    border-color: orangered;
+}
+
+#hero{
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.hero-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    max-width: 600px;
+}
+
+.tagline{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.tagline span{
+    color: #ffF;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+.desc{
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.project{
+    height: 100px;
+}
+.list-project{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    gap: 10px;
+    background-color: cyan;
+    border-radius: 40px;
+    padding: 10px;
+}

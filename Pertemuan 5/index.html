@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fithnan Ri'atan</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <span class="nav-logo">Omorii</span>
+        <ul class="nav-link">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+        <button class="btn-primary">Chat Me</button>
+    </nav>
+    <div id="hero">
+
+        <div class="hero-left">
+
+            <div class="intro">
+                <div class="typing">
+                    <h1 class="tagline">Hi! I am <span class="sec-text">Sosisal Media Spesialis</span></h1>
+
+                </div>
+                <h1 class="tagline">Fithnan Ri'atan</h1>
+
+                <p class="desc">I am a social media specialist with a passion for creating engaging content and building
+                    strong online communities.</p>
+                <div>
+                    <button class="btn-primary">Hire Me</button>
+                    <button class="btn-outline-primary">Download CV</button>
+                </div>
+
+            </div>
+            <div class="project">
+                <a href="" class="list-project">
+                    <span> Instragam</span>
+                    <span> 90</span>
+                </a>
+                <a href="" class="list-project">
+                    <span> Facebook</span>
+                    <span> 90</span>
+                </a><a href="" class="list-project">
+                    <span> Whastapp </span>
+                    <span> 90</span>
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="picture">
+            <img src="img/person.jpg" alt="hero" class="hero-img" width="400px">
+        </div>
+
+    </div>
+
+
+    <!-- js typing -->
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Web Programer";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Mobile Developer";
+            }, 5000);
+            setTimeout(() => {
+                text.textContent = "UI/UX Designer";
+            }, 10000);
+        }
+        textLoad();
+        setInterval(textLoad, 15000);
+    </script>
+
+</body>
+
+</html>
