@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href=""><img class="logo" src="img/logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#terbaru">Terbaru</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Get's Sneaker <br> Get's <span>Panda's</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure esse, iusto adipisci quibusdam veniam
+                    aspernatur sed vero nisi corporis magni incidunt commodi nihil deserunt dolore totam eligendi
+                    provident. Doloribus, excepturi.</p>
+                <div>
+                    <a class="order" href="">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="imgBox">
+                <img src="img/sepatu1.png" alt="sepatu" class="img-sneaker">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" alt="thumb1" data-color="#ff6347" onclick="imgSlider(this)"></li>
+            <li><img src="img/thumb2.png" alt="thumb2" data-color="#204bb3" onclick="imgSlider(this)"></li>
+            <li><img src="img/thumb3.png" alt="thumb3" data-color="#464b57" onclick="imgSlider(this)"></li>
+        </ul>
+
+        <ul class="sosmed">
+            <li><a href=""><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a href=""><img src="img/instagram.png" alt="instagram"></a></li>
+            <li><a href=""><img src="img/twitter.png" alt="twitter"></a></li>
+        </ul>
+        
+    </section>
+    <script type="text/javascript">
+        function imgSlider(element) {
+            document.querySelector('.img-sneaker').src = element.src;
+            
+            const img = document.querySelector('.img-sneaker');
+            
+            const circle = document.querySelector('.circle');
+            circle.style.backgroundColor = element.dataset.color;
+            
+            const span = document.querySelector('span');
+            span.style.color = element.dataset.color;
+
+            const button = document.querySelector('.order');
+            button.style.backgroundColor = element.dataset.color;
+        }
+
+        function changeCircleColor() {
+        }
+    </script>
+</body>
+
+</html>
