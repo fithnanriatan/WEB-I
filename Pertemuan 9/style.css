@@ -1,0 +1,33 @@
+:root {
+  --primary: #2563eb;
+  --secondary: #1e40af;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 100px 0;
+}
+
+.service-card {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.navbar-brand img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.testimonial-bg {
+  background-color: #f8f9fa;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+}
